@@ -119,7 +119,7 @@
         if (typeof this.successCallBack === "function") {
           this.successCallBack({
             id_token,
-            response: googleUser.getAuthCode(),
+            response: googleUser.getAuthResponse().access_token,
             id: profile.getId() ? profile.getId() : null,
             name: profile.getName() ? profile.getName() : null,
             image: profile.getImageUrl() ? profile.getImageUrl() : null,
